@@ -2,7 +2,7 @@
 
 Personal Profile or Virtual CV built on Angular
 
-## Run
+## Live
 
-Hit 
+https://ermarkar.github.io/whoami/home
 

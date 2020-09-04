@@ -1,0 +1,17 @@
+<div class="whoami-home">
+
+    <!-- user info section -->
+    <div class="home-section" *ngIf="user">
+        <div class="section-title">{{user.name}}</div>
+        <div class="section-subtitle">{{user.designation}}</div>
+        <div class="section-social-accounts">
+            <div class="account-item" (click)="openLink(socialAccount)"
+                *ngFor="let socialAccount of user.socialAccounts">
+                <i class="" [ngClass]="socialAccount.faIcon"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- home footer -->
+    <div class="home-footer">{{copyright}}</div>
+</div>

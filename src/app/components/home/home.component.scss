@@ -10,6 +10,8 @@ $color-font: #fff;
     justify-content: center;
     text-align: center;
     flex-direction: column;
+    position: relative;
+    min-height: 500px;
     .home-section {
         color: $color-font;
         .section-title {
@@ -53,5 +55,22 @@ $color-font: #fff;
     }
     to {
         background-position: -400px 0;
+    }
+}
+
+@media screen and (max-width: 736px) {
+    .section-title {
+        font-size: 45px !important;
+    }
+    .section-subtitle {
+        font-size: 15px !important;
+    }
+    .account-item {
+        height: 50px !important;
+        width: 50px !important;
+        i {
+            line-height: 50px !important;
+            font-size: 28px !important;
+        }
     }
 }

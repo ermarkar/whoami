@@ -16,7 +16,7 @@ export class HomeComponent implements OnInit {
             { id: "STACK_OVERFLOW", name: "Stackoverflow", faIcon: "fa fa-stack-overflow", link: "https://stackoverflow.com/users/2172547/sunil-garg" },
             { id: "GITHUB", name: "GitHub", faIcon: "fa fa-github", link: "https://github.com/ermarkar" },
             { id: "INSTAGRAM", name: "Instagram", faIcon: "fa fa-instagram", link: "https://www.instagram.com/sunny.dhaula/" },
-            { id: "EMAIL", name: "Email", faIcon: "fa fa-envelope-o", link: "er.markar@gmail.com" },
+            { id: "YOU_TUBE", name: "YouTube", faIcon: "fa fa-youtube", link: "https://youtube.com/sunilgarg04" },
         ];
 
         this.user = new User({
@@ -30,11 +30,6 @@ export class HomeComponent implements OnInit {
     }
 
     openLink(account: SocialAccount): void {
-        if (account.id === "EMAIL") {
-            const mailText = `mailto:${account.link}`;
-            window.open(mailText, "_blank");
-        } else {
-            window.open(account.link, "_blank");
-        }
+        window.open(account.link, "_blank");
     }
 }

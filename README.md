@@ -8,7 +8,7 @@ yarn build
 
 ## Publish on github
 
-yarn publish
+yarn gh-publish
 
 ## Live
 

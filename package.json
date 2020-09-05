@@ -4,7 +4,7 @@
   "scripts": {
     "start": "ng serve",
     "build": "ng build --prod --base-href https://ermarkar.github.io/whoami/",
-    "publish" : "ngh -no-silent"
+    "gh-publish" : "ngh -no-silent"
   },
   "private": true,
   "dependencies": {

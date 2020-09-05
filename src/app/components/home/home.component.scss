@@ -31,8 +31,40 @@ $color-font: #fff;
                 border-radius: 50%;
                 margin: 0 10px;
                 cursor: pointer;
+                animation: nav-icons 0.5s ease-in-out forwards;
+                opacity: 0;
+                &:first-child(1) {
+                    animation-delay: 1.5s;
+                }
+                &:nth-child(1) {
+                    animation-delay: 1.75s;
+                }
+                &:nth-child(2) {
+                    animation-delay: 2s;
+                }
+                &:nth-child(3) {
+                    animation-delay: 2.25s;
+                }
+                &:nth-child(4) {
+                    animation-delay: 2.5s;
+                }
+                &:nth-child(5) {
+                    animation-delay: 2.75s;
+                }
                 &:hover {
                     transform: translate3d(0, -4.8572px, 0);
+                }
+
+                @keyframes nav-icons {
+                    0% {
+                        transform: translate3d(0, 1em, 0);
+                        opacity: 0;
+                    }
+
+                    to {
+                        transform: translateZ(0);
+                        opacity: 1;
+                    }
                 }
                 i {
                     color: $color-font;
